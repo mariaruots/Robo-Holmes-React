@@ -1,18 +1,93 @@
 h1 {
-    font-size: 50px;
-    font-family: 'Orbitron', sans-serif;
-  }
+	font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
 
-  i.far:hover {
-    color: red;
-  }
+i.far {
+  font-size: 100px;
+  color: #39ff14;
+  cursor: pointer;
+}
 
+i.far:hover {
+	color: white;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mockStream {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: grey;
+  z-index: -1;
+  /* display: inline-block;
+  position: fixed;
+	background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
+  background-size: cover;
+  z-index: -1; */
+}
+
+.movement {
+  float: left;
+  width: 45%;
+  text-align: center;
+}
+
+.camera {
+  float: right;
+  width: 45%;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  i.far {
+    font-size: 80px;
+  }
+  h1 {
+    display: none;
+  }
   .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
+    justify-content: flex-end;
   }
-  
+}
+
+@media screen and (max-width: 560px) {
+  i.far {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  h1 {
+    display: none;
+  }
+  i.far {
+    font-size: 50px;
+  }
+  .container {
+    justify-content: flex-end;
+  }
+}
+
+.fa-lightbulb {
+  margin-left: 3%;
+  margin-right: 3%;
+}
