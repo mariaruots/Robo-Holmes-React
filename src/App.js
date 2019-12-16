@@ -1,25 +1,21 @@
 import React from 'react';
 import './App.css';
-import FirstPage from './components/FirstPage';
-import Login from './components/Login';
-import NotFound from './components/NotFound';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import NavBar from "./components/NavBar";
+import { useAuth0 } from "./react-auth0-spa";
 
 function App() {
+  const {loading } = useAuth0();
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
   return (
-    <Router>
-      <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/">
-          <FirstPage />
-        </Route>
-        <Route>
-          <NotFound />
-        </Route>
-      </Switch>
-    </Router>
+    <div className="App">
+      <header>
+        <NavBar />
+      </header>
+    </div>
   );
 }
 
