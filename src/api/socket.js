@@ -27,4 +27,14 @@ function left() {
     return false;
 }
 
-export default {forward, stop, left, right, reverse};
+function moveup() {
+    socket.emit('moveup', '');
+    return false;
+}
+
+function movedown() {
+    socket.emit('movedown', '');
+    return false;
+}
+
+export default {forward, stop, left, right, reverse, moveup, movedown};
