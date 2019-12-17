@@ -8,9 +8,10 @@ const NavBar = () => {
   return (
     <div>
       {!isAuthenticated && (
-        <button onClick={() => loginWithRedirect({})}>Log in</button>
+          <div><div className="haamudiv"></div>
+          <button className="button1" onClick={() => loginWithRedirect({})}>Log in</button></div>
       )}
-      {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+      {isAuthenticated && <button className="button2" onClick={() => logout()}>Log out</button>}
       {isAuthenticated && (
           <FirstPage />
       )}
