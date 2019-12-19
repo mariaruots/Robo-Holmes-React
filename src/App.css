@@ -38,22 +38,22 @@
     transform: rotate(360deg);
   }
 }
-.button1 {
+.button1, .button2 {
   border: none;
   background: #404040;
   color: #ffffff !important;
   font-weight: 100;
-  padding: 20px;
+  padding: 10px;
   text-transform: uppercase;
   border-radius: 6px;
   display: inline-block;
   transition: all 0.3s ease 0s;
   letter-spacing: 1px;
 }
-.button1:focus {
+.button1:focus, .button2:focus {
   outline: none;
 }
-.button1:hover {
+.button1:hover, .button2:hover {
   color: #404040 !important;
   font-weight: 700 !important;
   letter-spacing: 3px;
@@ -63,5 +63,8 @@
   transition: all 0.3s ease 0s;
 }
 .haamudiv {
-  height: 300px;
+  height: 400px;
+}
+.navbar {
+  height: 5vh;
 }
