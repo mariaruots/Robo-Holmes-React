@@ -4,13 +4,13 @@ h1 {
   color: white;
 }
 
-i.far {
+i.far, i.fas {
   font-size: 100px;
   color: #39ff14;
   cursor: pointer;
 }
 
-i.far:hover {
+i.far:hover, i.fas:hover {
 	color: white;
 }
 
@@ -55,10 +55,11 @@ i.far:hover {
 .controls {
   width: 100%;
   margin-bottom: 5%;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 700px) {
-  i.far {
+  i.far, i.fas {
     font-size: 80px;
   }
   h1 {
@@ -70,7 +71,7 @@ i.far:hover {
 }
 
 @media screen and (max-width: 560px) {
-  i.far {
+  i.far, i.fas {
     font-size: 50px;
   }
 }
@@ -79,7 +80,7 @@ i.far:hover {
   h1 {
     display: none;
   }
-  i.far {
+  i.far, i.fas {
     font-size: 50px;
   }
   .container {
@@ -100,4 +101,8 @@ position: fixed;
   min-height: 100%;
   background-color: grey;
   z-index: -1;
+}
+#empty {
+  color: rgba(0, 0, 0, 0);
+  cursor: auto;
 }

@@ -47,5 +47,9 @@ function on() {
     socket.emit('on', '');
     return false;
 }
+function off() {
+    socket.emit('off', '');
+    return false;
+}
 
-export default {forward, stop, left, right, reverse, moveup, movedown, on};
+export default {forward, stop, left, right, reverse, moveup, movedown, on, off};
