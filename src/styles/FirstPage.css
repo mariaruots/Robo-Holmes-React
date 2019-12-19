@@ -91,3 +91,13 @@ i.far:hover {
   margin-left: 3%;
   margin-right: 3%;
 }
+
+.videoWrapper {
+position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: grey;
+  z-index: -1;
+}
